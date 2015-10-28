@@ -378,9 +378,9 @@ class ProductAdmin extends Produit {
         $this->checkCaracteristique($caracteristique);
         $this->tva = self::cleanPrice($tva);
         
-        $produitdesc->chapo = str_replace("\n", "<br />", $chapo);
+        $produitdesc->chapo = $chapo;
         $produitdesc->titre = $title;
-        $produitdesc->postscriptum = str_replace("\n", "<br />", $postscriptum);
+        $produitdesc->postscriptum = $postscriptum;
         $produitdesc->description = $description;
 
         $this->maj();

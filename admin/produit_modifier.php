@@ -43,8 +43,8 @@ try {
 
 $produit = new Produit($request->get('ref'));
 $produitdesc = new Produitdesc($produit->id, $lang);
-$produitdesc->chapo = str_replace("<br />", "\n", $produitdesc->chapo);
-$produitdesc->postscriptum = str_replace("<br />", "\n", $produitdesc->postscriptum);
+// $produitdesc->chapo = str_replace("<br />", "\n", $produitdesc->chapo);
+// $produitdesc->postscriptum = str_replace("<br />", "\n", $produitdesc->postscriptum);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
